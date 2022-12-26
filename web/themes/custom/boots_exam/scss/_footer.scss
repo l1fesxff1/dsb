@@ -1,0 +1,57 @@
+@import "variables";
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $dark;
+  margin: 0;
+  padding: 0;
+  border: none;
+  .footer_wrapper{
+    height: 195px;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .region-footer{
+      width: 150px;
+    }
+    .logo_block{
+      font-family: nexa_slab_regular;
+      width: 240px;
+      background-color: $dark;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      span{
+        text-align: center;
+        margin: 0;
+      }
+      .logo_name{
+        a{
+          color: $blue;
+          font-size: 34px;
+          line-height: 1;
+          text-decoration: none;
+        }
+      }
+      .logo_slogan{
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .footer{
+    .footer_wrapper{
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .region-footer{
+        width: auto;
+      }
+    }
+  }
+}

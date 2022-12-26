@@ -1,0 +1,49 @@
+@import "mixin";
+@import "variables";
+@import "fonts";
+.view-global-search{
+  margin-bottom: 57px;
+  .view-empty{
+    display: flex;
+    justify-content: center;
+    min-height: 284px;
+    align-items: center;
+    font-size: 30px;
+    color: #333333;
+    font-family: avenir_black;
+  }
+  .view-content{
+    display: flex;
+    flex-direction: column;
+    .views-row{
+      &:last-child{
+        margin-bottom: 0;
+      }
+      margin-bottom: 20px;
+      h2{
+        display: none;
+      }
+      .layout__region--content{
+        .block-field-blocktaxonomy-termservices-taxonomyname , .block-field-blocknodeemployeetitle , .block-field-blocknodenewtitle, .block-field-blocknodeclienttitle, .block-field-blocknodeprojecttitle{
+          font-size: 20px;
+          font-family: avenir_black;
+          margin-bottom: 5px;
+          letter-spacing: normal;
+          a{
+            text-decoration: none;
+            color: #333333;
+          }
+        }
+        .block-field-blocktaxonomy-termservices-taxonomyfield-description , .block-field-blocknodeemployeebody, .block-field-blocknodeclientbody, .block-field-blocknodenewbody, .block-field-blocknodeprojectbody{
+          margin-bottom: 20px;
+          font-size: 14px;
+          p{
+            br{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

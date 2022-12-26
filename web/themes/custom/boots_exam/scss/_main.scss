@@ -1,0 +1,25 @@
+@import "variables";
+@media (min-width: 1300px){
+  .main-container {
+    width: 1280px;
+  }
+}
+.main-container{
+  .region-content{
+    .content{
+      .layout--onecol{
+        .layout__region--content{
+          .block-field-blocknodepagetitle{
+            font-size: 30px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.navbar-default{
+  background-color: inherit;
+  border: none;
+}
+

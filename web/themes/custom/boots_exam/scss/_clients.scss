@@ -1,0 +1,26 @@
+@import "variables";
+.block-views-blockclients-block-1{
+  .view-clients{
+    .view-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 60px;
+      grid-column-gap: 60px;
+      margin-bottom: 34px;
+      .views-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .pager-nav{
+      margin-bottom: 68px;
+    }
+  }
+}
+/*   I M P O R T A N T    */
+article[about="/clients"]{
+  .block-field-blocknodepagetitle{
+    margin-bottom: 0;
+  }
+}

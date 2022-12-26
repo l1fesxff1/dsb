@@ -1,0 +1,370 @@
+@import "variables";
+/* таксономія паджес */
+
+.layout__region--content{
+  .block-field-blocktaxonomy-termservices-taxonomyname{
+    font-size: 32px;
+    margin-bottom: 57px;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+  }
+  .block-field-blocktaxonomy-termservices-taxonomyfield-images{
+    clear: both;
+    float: right;
+  }
+  .block-field-blocktaxonomy-termservices-taxonomyfield-description {
+    width: 100%;
+    font-size: 31px;
+    line-height: 39px;
+    margin-bottom: 112px;
+  }
+}
+
+/* проекти */
+
+.node--project-full{
+  .block-field-blocknodeprojecttitle{
+    font-size: 32px;
+    margin-bottom: 57px;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+  }
+  .block-field-blocknodeprojectfield-images{
+    clear: both;
+    float: right;
+    @media (max-width: 480px) {
+      img{
+        width: 220px;
+        height: 220px;
+      }
+    }
+    @media (max-width: 376px) {
+      img{
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+  .block-field-blocknodeprojectbody{
+    width: 100%;
+    font-size: 31px;
+    line-height: 39px;
+    margin-bottom: 50px;
+  }
+  .block-field-blocknodeprojectfield-services{
+    a{
+      font-size: 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      @media(max-width: 767px) {
+        font-size: 16px;
+      }
+    }
+    a[href*="/taxonomy/term/1"]{
+      color: $green;
+    }
+    a[href*="/app-development"]{
+      color:$red;
+    }
+    a[href*="/php-development"]{
+      color: $purple;
+    }
+    a[href*="/drupal"]{
+      color: $drupal;
+    }
+    margin-bottom: 56px;
+  }
+}
+/* клієнти */
+
+.node--client-full{
+  .block-field-blocknodeclienttitle{
+    font-size: 32px;
+    margin-bottom: 57px;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+  }
+  .block-field-blocknodeclientfield-images{
+    clear: both;
+    float: right;
+    //position: relative;
+    //right: 0;
+    //z-index: 1;
+  }
+  .block-field-blocknodeclientbody {
+    width: 100%;
+    font-size: 31px;
+    line-height: 39px;
+    margin-bottom: 112px;
+  }
+}
+
+
+/* команда */
+
+
+.node--employee-full{
+  .block-field-blocknodeemployeetitle{
+    font-size: 32px;
+    //margin-bottom: 57px;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+  }
+  .block-field-blocknodeemployeefield-post{
+    margin-bottom: 57px;
+    font-size: 20px;
+  }
+  .block-field-blocknodeemployeefield-images{
+    clear: both;
+    float: right;
+  }
+  .block-field-blocknodeemployeebody {
+    width: 100%;
+    font-size: 31px;
+    line-height: 39px;
+    margin-bottom: 112px;
+  }
+  .block-field-blocknodeemployeefield-social-networks{
+    width: 50%;
+    float: left;
+    span{
+      font-size: 40px;
+    }
+    @media(max-width: 560px) {
+      span{
+        font-size: 30px;
+      }
+    }
+  }
+  .block-extra-field-blocknodeemployeeflag-like{
+    margin-bottom: 112px;
+    width: 50%;
+    float: right;
+    .flag-like{
+      text-align: right;
+      font-size: 30px;
+    }
+    @media(max-width: 560px) {
+      .flag-like{
+        font-size: 26px;
+      }
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-height: 37px;
+    }
+  }
+}
+
+.node--new-full{
+  .block-field-blocknodenewfield-images{
+    clear: both;
+    float: right;
+    @media (max-width: 560px){
+      img{
+        width: 220px;
+        height: 220px;
+      }
+    }
+    @media (max-width: 420px){
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+    @media (max-width: 370px){
+      img{
+        width: 160px;
+        height: 160px;
+      }
+    }
+  }
+  .block-field-blocknodenewfield-name{
+    font-size: 32px;
+    display: flex;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+    @media (max-width: 460px) {
+      font-size: 26px;
+    }
+    @media (max-width: 420px){
+      font-size: 20px;
+    }
+  }
+  .block-field-blocknodenewfield-posada{
+    font-size: 20px;
+    margin-bottom: 57px;
+    @media (max-width: 460px) {
+      font-size: 16px;
+    }
+    @media (max-width: 420px) {
+      font-size: 12px;
+    }
+  }
+  .block-field-blocknodenewtitle{
+    font-size: 32px;
+    font-family: avenir_black;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    @media(max-width: 460px) {
+      font-size: 26px;
+    }
+    @media(max-width: 400px) {
+      font-size: 22px;
+    }
+  }
+  .block-field-blocknodenewbody{
+    width: 100%;
+    font-size: 31px;
+    line-height: 39px;
+    margin-bottom: 57px;
+    @media(max-width: 1300px) {
+      font-size: 30px;
+    }
+    @media(max-width: 1200px) {
+      font-size: 26px;
+    }
+    @media(max-width: 991px) {
+      font-size: 22px;
+    }
+    @media(max-width: 768px) {
+      font-size: 16px;
+    }
+    @media(max-width: 460px) {
+      font-size: 12px;
+    }
+  }
+  .block-field-blocknodenewfield-date-ago{
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 57px;
+    @media(max-width: 991px) {
+      font-size: 26px;
+    }
+    @media(max-width: 768px) {
+      font-size: 22px;
+    }
+    @media(max-width: 460px) {
+      font-size: 18px;
+    }
+  }
+}
+@media(max-width: 1299px) {
+  .node--client-full{
+    .block-field-blocknodeclientbody{
+      font-size: 26px;
+    }
+  }
+  .node--employee-full{
+    .block-field-blocknodeemployeebody{
+      font-size: 26px;
+
+    }
+  }
+  .node--project-full{
+    .block-field-blocknodeprojectbody{
+      font-size: 26px;
+
+    }
+  }
+  .layout__region--content{
+    .block-field-blocktaxonomy-termservices-taxonomyfield-description {
+      font-size: 26px;
+
+    }
+  }
+}
+@media(max-width: 991px) {
+  .node--client-full{
+    .block-field-blocknodeclientbody{
+      font-size: 22px;
+    }
+  }
+  .node--employee-full{
+    .block-field-blocknodeemployeebody{
+      font-size: 22px;
+
+    }
+  }
+  .node--project-full{
+    .block-field-blocknodeprojectbody{
+      font-size: 22px;
+
+    }
+  }
+  .layout__region--content{
+    .block-field-blocktaxonomy-termservices-taxonomyfield-description {
+      font-size: 22px;
+
+    }
+  }
+}
+@media(max-width: 767px) {
+  .node--client-full{
+    .block-field-blocknodeclientbody{
+      font-size: 18px;
+    }
+  }
+  .node--employee-full{
+    .block-field-blocknodeemployeebody{
+      font-size: 18px;
+
+    }
+  }
+  .node--project-full{
+    .block-field-blocknodeprojectbody{
+      font-size: 18px;
+
+    }
+  }
+  .layout__region--content{
+    .block-field-blocktaxonomy-termservices-taxonomyfield-description {
+      font-size: 18px;
+
+    }
+  }
+}
+@media(max-width: 500px) {
+  .node--client-full{
+    .block-field-blocknodeclientbody{
+      font-size: 15px;
+      line-height: 24px;
+    }
+  }
+  .node--employee-full{
+    .block-field-blocknodeemployeefield-images{
+      img{
+        width: 220px;
+        height: 220px;
+      }
+    }
+    .block-field-blocknodeemployeebody{
+      font-size: 15px;
+      line-height: 24px;
+    }
+    .block-field-blocknodeemployeefield-social-networks{
+      span{
+        font-size: 30px;
+      }
+    }
+    .block-extra-field-blocknodeemployeeflag-like{
+      .flag-like{
+        font-size: 20px;
+      }
+    }
+  }
+  .node--project-full{
+    .block-field-blocknodeprojectbody{
+      font-size: 15px;
+      line-height: 24px;
+
+    }
+  }
+  .layout__region--content{
+    .block-field-blocktaxonomy-termservices-taxonomyfield-description {
+      font-size: 15px;
+      line-height: 24px;
+
+    }
+  }
+}

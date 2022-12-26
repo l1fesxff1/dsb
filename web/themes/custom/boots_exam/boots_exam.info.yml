@@ -1,0 +1,28 @@
+type: theme
+base theme: bootstrap
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+name: 'boots_exam'
+package: 'Bootstrap'
+
+stylesheets-remove:
+  - '@bootstrap@3.4.1/dist/css/less/pagination.less'
+  - 'https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/less/pagination.less'
+  - '@https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/less/grid.less'
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - boots_exam/framework

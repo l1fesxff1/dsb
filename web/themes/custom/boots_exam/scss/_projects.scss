@@ -1,0 +1,82 @@
+@import "variables";
+@import "mixin";
+article[about="/projects"]{
+  .block-field-blocknodepagetitle{
+    margin-bottom: 32px;
+  }
+}
+.block-views-blockprojects-block-1{
+  .view-projects{
+    .view-content{
+      @include grid-4-columns;
+      @media(max-width: 1000px) {
+        @include grid-3-columns;
+      }
+      @media(max-width: 767px) {
+        @include grid-2-columns;
+      }
+      @media(max-width: 600px) {
+        @include grid-1-columns;
+      }
+      margin-bottom: 32px;
+      .views-row{
+        display: flex;
+        padding-bottom: 10px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .views-field-field-images{
+          margin-bottom: 20px;
+        }
+        .views-field-title{
+          margin-bottom: 5px;
+          a{
+            @media(max-width: 1000px) {
+              font-size: 20px;
+            }
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 22px;
+            color:black;
+          }
+        }
+        .views-field-field-services{
+          padding-bottom: 10px;
+          .field-content{
+            a{
+              text-decoration: none;
+              text-transform: uppercase;
+            }
+            a[href*="/taxonomy/term/1"]{
+              color: $green;
+            }
+            a[href*="/app-development"]{
+              color:$red;
+            }
+            a[href*="/php-development"]{
+              color: $purple;
+            }
+            a[href*="/drupal"]{
+              color: $drupal;
+            }
+          }
+        }
+        .views-field-view-node{
+          padding: 5px 12px;
+          background-color: $blue;
+            a{
+              text-align: center;
+              text-transform: uppercase;
+              text-decoration: none;
+              color:white;
+            }
+        }
+      }
+    }
+    .pager-nav{
+      margin-bottom: 89px;
+    }
+  }
+}
+

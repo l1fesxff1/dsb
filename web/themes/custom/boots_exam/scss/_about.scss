@@ -1,0 +1,12 @@
+@import "variables";
+article[about="/about"]{
+  .block-field-blocknodepagetitle{
+    margin-bottom: 4px;
+  }
+  margin-bottom: 54px;
+}
+@media (max-width: 991px) {
+  .block-field-blocknodepagebody{
+    //text-align: center;
+  }
+}

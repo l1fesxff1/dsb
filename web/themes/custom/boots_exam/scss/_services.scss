@@ -1,0 +1,52 @@
+@import "variables";
+@import "mixin";
+
+.block-views-blockservices-block-1{
+  .view-services{
+    .view-content{
+      @include grid-4-columns;
+      @media(max-width: 1000px) {
+        @include grid-3-columns;
+      }
+      @media(max-width: 767px) {
+        @include grid-2-columns;
+      }
+      @media(max-width: 600px) {
+        @include grid-1-columns;
+      }
+      margin-bottom: 43px;
+      .views-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .views-field-field-images{
+          margin-bottom: 25px;
+        }
+        .views-field-name{
+          margin-bottom: 10px;
+          a{
+            letter-spacing : -1px;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+          }
+        }
+        .views-field-field-description{
+          text-align: center;
+          margin-bottom: 10px;
+          @media(max-width: 767px) {
+            div{
+              max-width: 300px;
+            }
+          }
+        }
+      }
+    }
+    .pager-nav{
+      margin-bottom: 38px;
+    }
+  }
+}

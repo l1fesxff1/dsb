@@ -1,0 +1,93 @@
+@import "variables";
+@import "mixin";
+
+article[about="/our-team"]{
+  .block-field-blocknodepagetitle{
+    margin-bottom: 9px;
+  }
+}
+.block-views-blockour-team-block-1 , .block-views-blockpost-view-block-1{
+  .view-our-team , .view-post-view{
+    margin-bottom: 100px;
+    .view-content{
+      @include grid-4-columns;
+      @media(max-width: 1000px) {
+        @include grid-3-columns;
+      }
+      @media(max-width: 767px) {
+        @include grid-2-columns;
+      }
+      @media(max-width: 600px) {
+        @include grid-1-columns;
+      }
+      margin-bottom: 27px;
+      .views-row {
+        .layout__region--content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          .block-field-blocknodeemployeefield-images{
+            margin-bottom: 15px;
+          }
+          .block-field-blocknodeemployeetitle{
+            text-align: center;
+            flex: 0 1 100%;
+            letter-spacing: normal;
+            font-family: avenir_book;
+            font-size: 22px;
+            a{
+              letter-spacing: normal;
+              text-transform: uppercase;
+              text-decoration: none;
+              color: black;
+            }
+          }
+          .block-field-blocknodeemployeefield-post{
+            text-align: center;
+            margin-bottom: 10px;
+            flex: 0 1 100%;
+            font-size: 12px;
+            a{
+              color: #CDCDCD;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+          }
+          .block-extra-field-blocknodeemployeelinks{
+            text-align: center;
+            flex: 0 1 100%;
+            margin-bottom: 10px;
+            ul{
+              margin-bottom: 0;
+              padding-left: 0;
+              li{
+                padding: 5px 10px;
+                background-color: $dark;
+                a{
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  color: white;
+                  font-size: 13px;
+                  font-weight: 500;
+                }
+              }
+            }
+          }
+          .block-field-blocknodeemployeefield-social-networks{
+            flex: 0 1 67%;;
+          }
+          .block-extra-field-blocknodeemployeeflag-like{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 0;
+          }
+        }
+
+      }
+    }
+    .pager-nav{
+      margin-bottom: 77px;
+    }
+  }
+}
